@@ -1,11 +1,5 @@
-Flask
-gunicorn
+flask
 pandas
 numpy
-scikit-learn
-matplotlib
 PyPDF2
-pytesseract
-Pillow
-reportlab
-python-docx
+gunicorn
