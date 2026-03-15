@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Analyst Login</title>
+
+<style>
+
+body{
+font-family:Segoe UI;
+background:#f4f7fb;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+width:320px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:20px;
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:10px;
+width:100%;
+border:none;
+border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Analyst Login</h2>
+
+<form action="/login" method="POST">
+
+<input name="username" placeholder="Username">
+
+<input name="password" type="password" placeholder="Password">
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

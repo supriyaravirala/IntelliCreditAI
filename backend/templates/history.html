@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Analysis History</title>
+
+<style>
+
+body{
+font-family:Segoe UI;
+background:#f4f7fb;
+margin:0;
+}
+
+header{
+background:#0f172a;
+color:white;
+padding:20px;
+}
+
+table{
+width:80%;
+margin:40px auto;
+border-collapse:collapse;
+background:white;
+}
+
+td,th{
+padding:12px;
+border-bottom:1px solid #e2e8f0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Previous Credit Analyses</h2>
+
+</header>
+
+<table>
+
+<tr>
+<th>Company</th>
+<th>Risk Score</th>
+<th>Risk Level</th>
+</tr>
+
+{% for item in history %}
+
+<tr>
+
+<td>{{item.company}}</td>
+
+<td>{{item.score}}</td>
+
+<td>{{item.level}}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+
+</html>
